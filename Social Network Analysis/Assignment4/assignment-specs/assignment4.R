@@ -52,7 +52,7 @@ plot(samplk3)
 # 2. Since the network is directed, what is the probability for a mutual friendship among the monks (e.g., 0.20)
 # 3. What is the probability that a relationship between monks occurs based on the same group? (e.g., 0.20)
 # 4. What is the probability for edge formation for monks belonging to the Turk group? (e.g., 0.20)
-# 5. Does coming from the cloisterville monestary prior lead to relationship formation among these monks? Provide the p value instead. (e.g., 0.20)
+# 5. Does coming from the cloisterville monestary prior lead to relationship formation among these monks? Provide the probability value.
 
 # Note: NA is an acceptable answer
 # Hint: you will need to separate ergm models for this function.
