@@ -35,6 +35,23 @@ Key points:
 - **Quote glob patterns.** `plagiarism_pattern: "*.R"` — an unquoted `*.R` is a
   YAML alias and the file will not parse.
 
+## ⚠️ You must supply the reference solution
+
+The `test-correctness` scripts grade by comparing the student's function output
+against an **instructor reference implementation**, which they load from
+`tests/assignmentN.R` (the second argument passed to every test script).
+
+**The `tests/assignmentN.R` files in this repository are student stubs**, not
+solutions — they are byte-for-byte identical to the copies in `assignment-specs/`
+and contain only `# YOUR CODE HERE` placeholders. This is deliberate: solutions
+are not published here (see the note at the top of this README). Before running
+an assignment you **must** replace `tests/assignmentN.R` with your own working
+solution. If you do not, the reference also returns nothing and *every*
+submission — including a fully correct one — scores 0.
+
+Keep the reference and the stub in sync: the reference must define the same
+`question1`, `question2`, ... function names that the spec asks students to write.
+
 ## Configuration
 
 See `NoCanvasDemo/assignment.yaml` for a fully commented example of running

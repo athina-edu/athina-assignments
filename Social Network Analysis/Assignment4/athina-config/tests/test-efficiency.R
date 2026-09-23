@@ -47,11 +47,11 @@ for (i in (1:50)) {
     df <- t.test(student_time, instructor_time)$parameter[[1]]
     
     if (p.value < 0.05 && sqrt((t.stat^2)/(t.stat^2 + df)) > 0.1 && t.stat > 0) { # Effect size and pvalue and positive diff
-      results$test[i] <- i
+      results$question[i] <- i
       results$result[i] <- "FAIL"
       results$time_diff[i] <- sum(student_time)-sum(instructor_time)
     } else {
-      results$test[i] <- i
+      results$question[i] <- i
       results$result[i] <- "PASS"
       results$time_diff[i] <- sum(student_time)-sum(instructor_time)
     }
