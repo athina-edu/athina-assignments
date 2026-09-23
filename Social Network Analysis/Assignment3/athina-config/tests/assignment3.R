@@ -1,4 +1,6 @@
 # DEFAULT CODE TO GET YOU STARTED
+# setwd("~/Dropbox/Courses/CSCI424/Assignment3/")
+# setwd("C:/Users/tsike/Dropbox/Courses/CSCI424/Assignment3/")
 library(igraph)
 
 # In this assignment you will explore measures of centrality on two networks,
@@ -23,7 +25,6 @@ question1 <- function() {
   # YOUR CODE HERE
 
 }
-
 
 # For Questions 2, 3, and 4, use one of the covered centrality measures to rank the 
 # nodes and find the most appropriate candidate.

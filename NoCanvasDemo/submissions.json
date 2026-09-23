@@ -1,0 +1,25 @@
+{
+  "course_id": 1,
+  "assignment_id": 1,
+  "due_date": "2026-12-31T23:59:59",
+  "submissions": [
+    {
+      "user_id": 1001,
+      "user_fullname": "Alice Johnson",
+      "secondary_id": "alice.johnson@university.edu",
+      "repository_url": "https://gitlab.com/alice-johnson/assignment1.git"
+    },
+    {
+      "user_id": 1002,
+      "user_fullname": "Bob Smith",
+      "secondary_id": "bob.smith@university.edu",
+      "repository_url": "https://gitlab.com/bob-smith/assignment1.git"
+    },
+    {
+      "user_id": 1003,
+      "user_fullname": "Carol Davis",
+      "secondary_id": "carol.davis@university.edu",
+      "repository_url": "https://gitlab.com/carol-davis/assignment1.git"
+    }
+  ]
+}

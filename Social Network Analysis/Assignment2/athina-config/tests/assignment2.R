@@ -1,4 +1,6 @@
 # DEFAULT CODE TO GET YOU STARTED
+# setwd("~/Dropbox/Courses/CSCI424/Assignment2/")
+# setwd("C:/Users/tsike/Dropbox/Courses/CSCI424/Assignment2/")
 library(igraph)
 
 # In this assignment you will go through the process of importing and analyzing

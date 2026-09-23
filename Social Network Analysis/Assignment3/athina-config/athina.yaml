@@ -1,0 +1,42 @@
+# Athina configuration for CSCI 424 Assignment 3
+# Read by the grading engine. input_method: db means students and grades are
+# managed through the Athina web interface rather than the Canvas API.
+
+input_method: db
+
+# Test scripts. Athina runs each from TEST_DIR and appends two arguments:
+# the student's directory and the tests directory.
+test_scripts:
+  - Rscript test-correctness.R
+  - Rscript test-clarity.R
+  - Rscript test-efficiency.R
+test_weights: [0.7, 0.2, 0.1]
+
+# Total points for the assignment
+total_points: 80
+
+# If true the due date is enforced, otherwise it is ignored
+enforce_due_date: true
+
+# Plagiarism detection (CopyDetect - runs locally, no server needed)
+plagiarism_pattern: "*.R"
+copydetect_threshold: 0.33
+plagiarism_publish: false
+
+# Students sharing a repository URL. Raise this for group assignments.
+same_url_limit: 1
+
+# Hour of the day to run plagiarism checks (24h, UTC)
+check_plagiarism_hour: 9
+
+# Store results as a file rather than submitting to an e-learning platform
+submit_results_as_file: true
+
+# Truncate test output beyond this size (KB)
+max_file_size: 1024
+
+# Seconds a test may run before it is terminated
+test_timeout: 900
+
+# Verbose engine output; turn off in production
+print_debug_msgs: true
